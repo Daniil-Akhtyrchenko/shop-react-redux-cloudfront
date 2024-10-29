@@ -1,0 +1,22 @@
+import { Product } from "../types/product";
+
+export const products: Product[] = [
+  {
+    id: "1",
+    title: "Product 1",
+    description: "Description for Product 1",
+    price: 1000,
+  },
+  {
+    id: "2",
+    title: "Product 2",
+    description: "Description for Product 2",
+    price: 1000,
+  },
+  {
+    id: "3",
+    title: "Product 3",
+    description: "Description for Product 3",
+    price: 1000,
+  },
+];

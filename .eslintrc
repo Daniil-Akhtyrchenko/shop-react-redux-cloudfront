@@ -2,7 +2,8 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "fa-products-service-sand-ne-001": "./fa-products-service-sand-ne-001/tsconfig.json"
   },
   "extends": [
     "plugin:@typescript-eslint/recommended",

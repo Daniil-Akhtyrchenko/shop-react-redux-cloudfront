@@ -16,6 +16,23 @@ export function useAvailableProducts() {
   );
 }
 
+export function useGetProducts() {
+  return useQuery<AvailableProduct[], AxiosError>(
+    "available-products",
+    async () => {
+      const res = await axios.get<AvailableProduct[]>(
+        `${API_PATHS.afProducts}/products/`,
+        {
+          headers: {
+            "x-functions-key": process.env.FA_API_KEY as string,
+          },
+        }
+      );
+      return res.data;
+    }
+  );
+}
+
 export function useInvalidateAvailableProducts() {
   const queryClient = useQueryClient();
   return React.useCallback(
